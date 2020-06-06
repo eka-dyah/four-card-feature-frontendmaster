@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    flex: 0.96 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title-container {
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    width: 550px;
+    line-height: 20px;
+}
+
+.title-container h2, .title-container h1 {
+    font-size: 29px;
+}
+
+.title-container h2 {
+    font-weight: 200;
+    color: rgb(102, 101, 101);
+}
+
+.title-container h1 {
+    font-weight: 600;
+    color: rgb(97, 97, 97);
+}
+
+.title-container p {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(165, 165, 165);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 7px 20px 0px lightgrey;
+    margin: 15px;
+}
+
+.card h3 {
+    color: rgb(97, 97, 97);
+}
+
+.card p {
+    margin-top: -3%;
+    color: rgb(165, 165, 165);
+    font-size: 14px;
+}
+
+.card img {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 60px;
+}
+
+.top-border-cyan {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.top-border-red {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.top-border-orange {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.top-border-blue {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+@media (max-width: 1150px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    .title-container {
+        width: 380px;
+    }
+    .title-container p {
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
